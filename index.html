@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT IMPORTS - START -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT IMPORTS - END -->
+
+    <!-- STYLE IMPORT - START -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- STYLE IMPORT - START -->
+
+    <!-- SCRIPT IMPORT - START -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      defer
+    ></script>
+    <script src="js/min/script.min.js" defer></script>
+    <script src="js/min/smooth_scroll.min.js" defer></script>
+    <script src="js/min/contact_form.min.js" defer></script>
+    <!-- SCRIPT IMPORT - END -->
+    <title>Beating Poverty and Inequality</title>
+  </head>
+  <body onscroll="checkNavigationBar()">
+    <div class="sidebar-bg">
+    </div>
+
+    <sidebar class="sidebar">
+      <ul class="sidebar__navigation">
+        <a
+          href="#header"
+          class="sidebar__navigation-item sidebar__navigation-item--active"
+        >
+          Home
+        </a>
+        <a href="#aboutus" class="sidebar__navigation-item">About Us</a>
+        <a href="#ourgoal" class="sidebar__navigation-item">Our Goal</a>
+        <a href="#methods-to-acheive-our-goal" class="sidebar__navigation-item"
+        >Solutions</a
+        >
+        <a href="#ngos" class="sidebar__navigation-item">How can you help?</a>
+      </ul>
+    </sidebar>
+
+    <input
+      type="checkbox"
+      class="header__hamburger-checkbox"
+      id="navi-toggle"
+    />
+
+    <label for="navi-toggle" class="header__hamburger-button">
+      <span class="header__hamburger">&nbsp;</span>
+    </label>
+
+    <header class="header" id="header">
+      <!-- HAMBURGER MENU -->
+
+      <ul class="header__navigation">
+        <a
+          href="#header"
+          class="header__navigation-item header__navigation-item--active"
+        >
+          Home
+        </a>
+        <a href="#aboutus" class="header__navigation-item">About Us</a>
+        <a href="#ourgoal" class="header__navigation-item">Our Goal</a>
+        <a href="#methods-to-acheive-our-goal" class="header__navigation-item"
+          >Solutions</a
+        >
+        <a href="#ngos" class="header__navigation-item">How can you help?</a>
+        <a
+          href="#talk-to-us"
+          class="header__contact-btn"
+        >
+          Talk to us
+          <img src="img/Email_Icon.svg" alt="" />
+        </a>
+      </ul>
+
+      <div class="header__main">
+        <div class="header__content">
+          <h1 class="header__title">Beating Poverty and inequality</h1>
+          <p class="header__text">
+            Poverty and inequality are some of the fundamental problems of
+            society that must be solved in order to ensure access to resources
+            and economic welfare across nations.
+          </p>
+          <a href="#ourgoal" class="header__cta">Learn More &darr;</a>
+        </div>
+
+        <div class="header__slideshow">
+          <button
+            class="header__slideshow-dot header__slideshow-dot--active"
+            data-slide="1"
+          ></button>
+          <button class="header__slideshow-dot" data-slide="2"></button>
+          <button class="header__slideshow-dot" data-slide="3"></button>
+        </div>
+      </div>
+
+      <a
+        href="#talk-to-us"
+        class="contact-btn--mobile"
+        ><img src="img/Email_Icon.svg" alt=""
+      /></a>
+    </header>
+
+    <section class="aboutus" id="aboutus">
+      <div class="section-heading__container">
+        <h1 class="section-heading">About us</h1>
+      </div>
+
+      <h3 class="subtitle">Our Team</h3>
+
+      <div class="aboutus__picture-grid">
+        <div class="aboutus__person">
+          <img
+            src="img/Aarav_Parikh.png"
+            alt="Aarav Parikh's photo"
+            class="about_us__person-picture"
+          />
+          <h3 class="aboutus__person-name">Aarav Parikh</h3>
+        </div>
+        <div class="aboutus__person">
+          <img
+            src="img/Aarush_Yadav.png"
+            alt="Aarush Yadav's photo"
+            class="about_us__person-picture"
+          />
+          <h3 class="aboutus__person-name">Aarush Yadav</h3>
+        </div>
+        <div class="aboutus__person">
+          <img
+            src="img/Diyaan_Chedda.png"
+            alt="Diyaan Chedda's photo"
+            class="about_us__person-picture"
+          />
+          <h3 class="aboutus__person-name">Diyaan Chheda</h3>
+        </div>
+        <div class="aboutus__person">
+          <img
+            src="img/Prayrit_Jain.png"
+            alt="Prayrit Jain's photo"
+            class="about_us__person-picture"
+          />
+          <h3 class="aboutus__person-name">Prayrit Jain</h3>
+        </div>
+      </div>
+      <p class="aboutus__paragraph paragraph">
+        We are a group of students that seek to make an impact by educating
+        people about the causes, consequences and solutions to poverty, and how
+        to solve it, we must inevitably solve inequality first.
+      </p>
+    </section>
+
+    <section class="ourgoals" id="ourgoal">
+      <div class="section-heading__container">
+        <h1 class="section-heading">Our Goal</h1>
+      </div>
+
+      <p class="ourgoal__paragraph paragraph">
+        Our ultimate goal is to eradicate poverty across India. It is a very
+        far-fetched idea for some, but we believe we have the right strategy in
+        mind to achieve:
+      </p>
+
+      <div class="ourgoals__goals">
+        <div class="ourgoals__goal">
+          <img src="img/Poverty_Icon.svg" alt="" class="ourgoals__goal-icon" />
+          <h3 class="ourgoals__goal-caption">Economic Welfare</h3>
+        </div>
+        <div class="ourgoals__goal">
+          <img
+            src="img/Inequality_Icon.svg"
+            alt=""
+            class="ourgoals__goal-icon"
+          />
+          <h3 class="ourgoals__goal-caption">Societal Equality</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="methods" id="methods-to-acheive-our-goal">
+      <div class="section-heading__container">
+        <h1 class="section-heading">Solutions</h1>
+      </div>
+
+      <p class="solutions__paragraph paragraph">
+        We plan on achieving our goal using methods that may not be
+        conventional. This means that we will not address poverty and inequality
+        themselves, but rather their root cause: the lack of education. Lack of
+        education is the source issue that leads to the problem set that we are
+        addressing. This is because if one is not educated, they cannot earn
+        money (poverty), and if they cannot earn money, then they won't be
+        treated as equals in the society.
+        <br /><br />
+        By volunteering or donating to local, national and global NGOs, these
+        organizations will have more funds, motivation and manpower to bring
+        about a positive change in the society. In addition to that,
+        volunteering can help bring an immediate change, something that is
+        tangible and experiential, a viewable outcome of one's efforts.
+        
+      </p>
+
+      <video class="methods__video" controls>
+        <source src="https://povertyandinequality.s3.ap-south-1.amazonaws.com/Solutions_Video.mp4" type="video/mp4">
+      </video>
+
+      <div class="methods__steps">
+        <div class="methods__steps-image-container">
+          <img
+            src="img/Education_Image.png"
+            alt=""
+            class="methods__steps-image"
+          />
+          <img
+            src="img/Education_Icon.svg"
+            alt=""
+            class="methods__steps-icon"
+          />
+        </div>
+
+        <div class="methods__steps-text-container">
+          <div class="methods__step">
+            <h1 class="methods__steps-num">01</h1>
+            <h2 class="methods__steps-title">
+              Provide
+              <a
+                href="https://www.worldbank.org/en/topic/education/overview"
+                target="_blank"
+                class="methods__link"
+                >education</a
+              >.
+            </h2>
+          </div>
+          <div class="methods__step">
+            <h1 class="methods__steps-num">02</h1>
+            <h2 class="methods__steps-title">People earn more.</h2>
+          </div>
+          <div class="methods__step">
+            <h1 class="methods__steps-num">03</h1>
+            <h2 class="methods__steps-title">
+              Less
+              <a
+                href="https://www.worldbank.org/en/topic/isp/overview"
+                target="_blank"
+                class="methods__link"
+                >inequality</a
+              >
+              and
+              <a
+                href="https://www.worldbank.org/en/topic/poverty/overview"
+                target="_blank"
+                class="methods__link"
+                >poverty</a
+              >.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ngos" id="ngos">
+      <div class="section-heading__container">
+        <h1 class="section-heading">How can you help?</h1>
+      </div>
+
+      <p class="paragraph ngos__paragraph"></p>
+
+      <img src="img/The_Akansha_Foundation.jpg" alt="The Akansha Foundation Logo" class="ngos__image">
+
+      <div class="ngos__links">
+        <a href="https://www.akanksha.org/" target="_blank" class="ngos__link">Visit the Website 🌐</a>
+        <a href="https://www.akanksha.org/work-with-us/volunteer/ " target="_blank" class="ngos__link">Volunteer <img src="img/Volunteer_Icon.svg" alt="Volunteer Icon"></a>
+        <a href="https://www.billdesk.com/pgmerc/akanksha/AKANKSHADetails.htm" target="_blank" class="ngos__link">Donate <img src="img/Donate_Icon.svg" alt="Volunteer Icon"></a>
+      </div>
+    </section>
+
+    <section class="contact" id="talk-to-us">
+      <div class="section-heading__container">
+        <h1 class="section-heading">Talk to Us</h1>
+      </div>
+
+      <p class="paragraph contact__paragraph">
+        Fill out the form below and we will respond as soon as possible.
+      </p>
+
+      <form action="" class="contact__form">
+        <label class="contact__input-label" for="name">Name <text class="contact__asterisk">*</text></label>
+        <br />
+        <input type="text" class="contact__text-input" id="name" required/>
+
+        <label class="contact__input-label" for="email">Email <text class="contact__asterisk">*</text></label>
+        <br />
+        <input type="email" class="contact__text-input" id="email" required/>
+
+        <label class="contact__input-label" for="message">Message <text class="contact__asterisk">*</text></label>
+        <br />
+        <textarea class="contact__text-input" id="message" rows="5" required/></textarea>
+
+        <button class="contact__submit-btn">Send Message</button>
+      </form>
+    </section>
+  </body>
+</html>
