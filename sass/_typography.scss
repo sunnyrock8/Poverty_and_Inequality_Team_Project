@@ -1,0 +1,36 @@
+.section-heading {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 2.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.25rem 2rem;
+  color: #eee;
+  transform: skewX(30deg);
+  overflow-wrap: break-word;
+
+  &__container {
+    display: inline-block;
+    width: fit-content;
+    background-image: linear-gradient(var(--gradient-tertiary));
+    transform: skewX(-30deg);
+  }
+}
+
+.subtitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: $purple-dark;
+  text-transform: uppercase;
+  margin-top: 2.4rem;
+}
+
+.paragraph {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: $grey-dark;
+  overflow-wrap: break-word;
+}

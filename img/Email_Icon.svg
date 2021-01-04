@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="91px" viewBox="0 0 140 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Email_Icon</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-729.000000, -108.000000)" stroke="#EEEEEE">
+            <g id="Email_Icon" transform="translate(729.000000, 108.000000)">
+                <rect id="Rectangle" stroke-width="5" x="2.5" y="2.5" width="135" height="86" rx="17"></rect>
+                <polyline id="Path-10" stroke-width="4" points="6.127876 7.06224103 70 45.5 133.270103 7.06224103"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,70 @@
+/* ROOT variable definitions - START */
+:root {
+  --gradient-primary: to right bottom, rgba(15, 16, 32, 0.71),
+    rgba(52, 56, 110, 0.71);
+  --gradient-secondary: to left top, #0f1020, #34386e;
+  --gradient-tertiary: to right, #9393ff, #6666ff;
+}
+/* ROOT variable definitions - END */
+
+/* SASS variable definitions - START */
+$blue-dark: #0f1020;
+$blue-light: #34386e;
+
+$purple-light: #9393ff;
+$purple-dark: #6666ff;
+
+$grey-dark: #3b3a3a;
+/* SASS variable definitions - END */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1 rem = 10px
+
+  @media only screen and (max-width: 65em) {
+    font-size: 57.5%;
+  }
+
+  @media only screen and (max-width: 62.5em) {
+    font-size: 55.5%;
+  }
+
+  @media only screen and (max-width: 26.25em) {
+    font-size: 52.5%;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #404e5b;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}

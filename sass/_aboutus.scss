@@ -1,0 +1,62 @@
+.aboutus {
+  width: 100%;
+  text-align: center;
+  padding-top: 12.5rem;
+
+  &__picture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+
+  &__person {
+    width: 100%;
+    margin-top: 7.9rem;
+    text-align: center;
+    opacity: 0;
+
+    transition: all 0.4s;
+
+    &:hover {
+      transform: translateY(-2rem);
+    }
+
+    &-picture {
+      display: block;
+      height: 17.7rem;
+    }
+
+    &-name {
+      font-family: "Lato", sans-serif;
+      font-size: 2.2rem;
+      color: $blue-light;
+      margin-top: 3rem;
+    }
+  }
+
+  & > .paragraph {
+    margin-top: 8.5rem;
+    padding: 0 21rem;
+    white-space: pre-line;
+    opacity: 0;
+    &:before,
+    &:after {
+      content: "";
+      width: 50%;
+      display: inline-block;
+      height: 3px;
+      background-color: #eee;
+    }
+
+    @media only screen and (max-width: 55.625em) {
+      padding: 0 18rem;
+    }
+
+    @media only screen and (max-width: 38.125em) {
+      padding: 0 10rem;
+    }
+
+    @media only screen and (max-width: 30.625em) {
+      padding: 0 5rem;
+    }
+  }
+}

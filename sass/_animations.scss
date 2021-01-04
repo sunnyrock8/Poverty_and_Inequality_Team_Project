@@ -1,0 +1,46 @@
+.fadeUp {
+  animation: fadeUp 1s;
+  animation-fill-mode: forwards;
+}
+
+.fade {
+  animation: fade 2s;
+  animation-fill-mode: forwards;
+}
+
+.stretchIn {
+  animation: stretchIn 0.5s;
+  animation-fill-mode: forwards;
+  transform-origin: left;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretchIn {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

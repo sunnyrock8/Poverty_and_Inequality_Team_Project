@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="93px" height="93px" viewBox="0 0 93 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Education Icon</title>
+    <g id="Education-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <circle id="Oval" fill-opacity="0.6" fill="#0000FF" cx="46.5" cy="46.5" r="46.5"></circle>
+            <g id="Group-2" transform="translate(20.866775, 14.322428)">
+                <g id="Group" transform="translate(0.000000, 4.000000)" fill="#CDCACA">
+                    <polygon id="Path-5" points="0.133225277 2.20770393 0.133225277 54.9059572 26.0734065 60.6775722 50.1332253 54.9059572 50.1332253 2.8149865e-15 22.6332253 10.0770557"></polygon>
+                </g>
+                <g id="Group">
+                    <polygon id="Path-5" fill="#EEEEEE" points="0.133225277 0.677572163 0.133225277 55.9059572 26.0734065 61.6775722 50.1332253 55.9059572 50.1332253 0.677572163 26.0734065 9.74648447"></polygon>
+                    <line x1="25.6332253" y1="9.67757216" x2="25.6332253" y2="61.6775722" id="Path-6" stroke="#CDCACA"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
