@@ -1,5 +1,10 @@
 /* Main script */
 window.onload = function () {
+  document.querySelector('.loader-container').style.transition = 'opacity 0.5s';
+  document.querySelector('.loader-container').style.opacity = '0';
+  document.querySelector('body').style.overflowY = 'auto';
+  setTimeout(() => document.querySelector('.loader-container').remove(), 500);
+
   const slideData = [
     {
       title: 'Beating Poverty and Inequality',
