@@ -1,3 +1,19 @@
+/* UTILITY FUNCTION DEFINITIONS -- START */
+Element.prototype.addClass = function (className) {
+  this.classList.add(className);
+  return this.classList;
+};
+
+Element.prototype.removeClass = function (className) {
+  this.classList.remove(className);
+  return this.className;
+};
+
+Element.prototype.hasClass = function (className) {
+  return this.classList.contains(className);
+};
+/* UTILITY FUNCTION DEFINITIONS -- END */
+
 /* Main script */
 window.onload = function () {
   document.querySelector('.loader-container').style.transition = 'opacity 0.5s';
@@ -33,19 +49,14 @@ window.onload = function () {
 
   const isInViewport = (element) => {
     const bounding = element.getBoundingClientRect();
-
-    if (
+    return (
       bounding.top >= 0 &&
       bounding.left >= 0 &&
       bounding.right <=
         (window.innerWidth || document.documentElement.clientWidth) &&
       bounding.bottom <=
         (window.innerHeight || document.documentElement.clientHeight)
-    ) {
-      return true;
-    } else {
-      return false;
-    }
+    );
   };
 
   function detectSwipe(id, func, deltaMin = 90) {
@@ -98,7 +109,7 @@ window.onload = function () {
         // vertical
         else direction = deltaY > 0 ? directions.UP : directions.DOWN;
 
-        if (direction && typeof func === 'function') func(el, direction);
+        direction && typeof func === 'function' && func(el, direction);
 
         direction = null;
       },
@@ -134,23 +145,23 @@ window.onload = function () {
     title.remove();
 
     titleCopy.textContent = slideData[toSlide].title;
-    titleCopy.classList.add('fadeUp');
+    titleCopy.addClass('fadeUp');
 
     text.before(textCopy);
     text.remove();
 
     textCopy.textContent = slideData[toSlide].body;
-    textCopy.classList.add('fade');
+    textCopy.addClass('fade');
 
     currentSlide = toSlide;
 
     for (const dot of document.querySelectorAll('.header__slideshow-dot')) {
-      dot.classList.remove('header__slideshow-dot--active');
+      dot.removeClass('header__slideshow-dot--active');
     }
 
     document
       .querySelector(`.header__slideshow-dot[data-slide="${currentSlide + 1}"]`)
-      .classList.add('header__slideshow-dot--active');
+      .addClass('header__slideshow-dot--active');
 
     timePassed = 0;
   };
@@ -158,7 +169,7 @@ window.onload = function () {
   document
     .querySelector('.header__slideshow')
     .addEventListener('click', function (e) {
-      if (!e.target.classList.contains('header__slideshow-dot')) return;
+      if (!e.target.hasClass('header__slideshow-dot')) return;
 
       const toSlide = e.target.dataset.slide - 1;
       goToSlide(toSlide);
@@ -199,13 +210,13 @@ window.onload = function () {
   document
     .querySelector('.header__navigation')
     .addEventListener('click', (e) => {
-      if (!e.target.classList.contains('header__navigation-item')) return;
+      if (!e.target.hasClass('header__navigation-item')) return;
 
       for (const a of document.querySelectorAll('.header__navigation-item')) {
-        a.classList.remove('header__navigation-item--active');
+        a.removeClass('header__navigation-item--active');
       }
 
-      e.target.classList.add('header__navigation-item--active');
+      e.target.addClass('header__navigation-item--active');
     });
 
   function onscroll() {
@@ -265,7 +276,7 @@ window.onload = function () {
     }
     document
       .querySelector(`.header__navigation-item[href="#${activeSection}"]`)
-      .classList.add('header__navigation-item--active');
+      .addClass('header__navigation-item--active');
   }
 
   function checkAnimations() {
@@ -273,30 +284,30 @@ window.onload = function () {
       let delay = 0;
       for (const picture of document.querySelectorAll('.aboutus__person')) {
         picture.style.animationDelay = `${delay}s`;
-        picture.classList.add('fadeUp');
+        picture.addClass('fadeUp');
         delay++;
       }
     }
 
     if (elementInViewport2(document.querySelector('.aboutus__paragraph'))) {
-      document.querySelector('.aboutus__paragraph').classList.add('fade');
+      document.querySelector('.aboutus__paragraph').addClass('fade');
     }
 
     if (elementInViewport2(document.querySelector('.ourgoal__paragraph'))) {
-      document.querySelector('.ourgoal__paragraph').classList.add('fade');
+      document.querySelector('.ourgoal__paragraph').addClass('fade');
     }
 
     if (elementInViewport2(document.querySelector('.ourgoals__goal'))) {
       let delay = 0;
       for (const goal of document.querySelectorAll('.ourgoals__goal')) {
         goal.style.animationDelay = `${delay}s`;
-        goal.classList.add('fadeUp');
+        goal.addClass('fadeUp');
         delay++;
       }
     }
 
     if (elementInViewport2(document.querySelector('.solutions__paragraph'))) {
-      document.querySelector('.solutions__paragraph').classList.add('fade');
+      document.querySelector('.solutions__paragraph').addClass('fade');
     }
 
     if (
@@ -306,22 +317,22 @@ window.onload = function () {
     ) {
       let delay = 0;
       for (const step of document.querySelectorAll('.methods__step')) {
-        step.classList.add('fadeUp');
+        step.addClass('fadeUp');
         step.style.animationDelay = `${delay}s`;
         delay++;
       }
     }
 
     if (elementInViewport2(document.querySelector('.methods__video'))) {
-      document.querySelector('.methods__video').classList.add('fadeUp');
+      document.querySelector('.methods__video').addClass('fadeUp');
     }
 
     if (elementInViewport2(document.querySelector('.contact__paragraph'))) {
-      document.querySelector('.contact__paragraph').classList.add('fade');
+      document.querySelector('.contact__paragraph').addClass('fade');
     }
 
     if (elementInViewport2(document.querySelector('.ngos__paragraph'))) {
-      document.querySelector('.ngos__paragraph').classList.add('fade');
+      document.querySelector('.ngos__paragraph').addClass('fade');
     }
   }
 
@@ -348,7 +359,7 @@ window.onload = function () {
   document
     .querySelector('.sidebar__navigation')
     .addEventListener('click', function (e) {
-      if (!e.target.classList.contains('sidebar__navigation-item')) return;
+      if (!e.target.hasClass('sidebar__navigation-item')) return;
 
       document.querySelector('.header__hamburger-checkbox').click();
     });
