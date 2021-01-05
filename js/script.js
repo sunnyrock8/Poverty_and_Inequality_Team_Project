@@ -339,24 +339,11 @@ window.onload = function () {
     .addEventListener('click', function (e) {
       if (this.checked) {
         document.querySelector('.sidebar').style.transform = 'translateX(0)';
-        document.querySelector('.sidebar-bg').style.display = 'block';
-        document.querySelector('.sidebar-bg').style.opacity = '1';
       } else {
         document.querySelector('.sidebar').style.transform =
           'translateX(-101%)';
-        document.querySelector('.sidebar-bg').style.display = 'none';
-        document.querySelector('.sidebar-bg').style.display = '0';
       }
     });
-
-  document
-    .querySelector('.sidebar-bg')
-    .addEventListener(
-      'click',
-      (e) =>
-        document.querySelector('.header__hamburger-checkbox').checked &&
-        document.querySelector('.header__hamburger-checkbox').click()
-    );
 
   document
     .querySelector('.sidebar__navigation')
