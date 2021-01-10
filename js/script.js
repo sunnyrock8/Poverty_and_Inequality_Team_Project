@@ -274,7 +274,7 @@ window.onload = function () {
       for (const picture of document.querySelectorAll('.aboutus__person')) {
         picture.style.animationDelay = `${delay}s`;
         picture.classList.add('fadeUp');
-        delay++;
+        delay += 0.75;
       }
     }
 
