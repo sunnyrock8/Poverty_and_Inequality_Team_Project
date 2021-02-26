@@ -320,9 +320,9 @@ window.onload = function () {
       document.querySelector('.contact__paragraph').classList.add('fade');
     }
 
-    if (elementInViewport2(document.querySelector('.ngos__paragraph'))) {
-      document.querySelector('.ngos__paragraph').classList.add('fade');
-    }
+    // if (elementInViewport2(document.querySelector('.ngos__paragraph'))) {
+    //   document.querySelector('.ngos__paragraph').classList.add('fade');
+    // }
   }
 
   window.checkNavigationBar = onscroll;
