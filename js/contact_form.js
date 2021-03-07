@@ -1,10 +1,9 @@
 const form = document.querySelector('.contact__form');
 const submitBtn = document.querySelector('.contact__submit-btn');
 
-const hideAlert = () => {
-  const el = document.querySelector('.alert');
-  if (el) el.classList.add('animateTopOut');
-};
+const hideAlert = () =>
+  document.querySelector('.alert') &&
+  document.querySelector('.alert').classList.add('animateTopOut');
 
 const showAlert = (type, message) => {
   hideAlert();

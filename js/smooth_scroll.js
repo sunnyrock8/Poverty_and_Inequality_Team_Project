@@ -25,21 +25,28 @@ $(document).ready(function () {
   });
 });
 
+// const sectionNames = [
+//   'header',
+//   'aboutus',
+//   'ourgoal',
+//   'methods-to-acheive-our-goal',
+//   'ngos'
+// ];
 const sectionNames = [
   'header',
   'aboutus',
   'ourgoal',
   'methods-to-acheive-our-goal',
-  'ngos',
 ];
 
 const sec1 = $('#header').offset().top - 50;
 const sec2 = $('#aboutus').offset().top - 50;
 const sec3 = $('#ourgoal').offset().top - 50;
 const sec4 = $('#methods-to-acheive-our-goal').offset().top - 50;
-const sec5 = $('#ngos').offset().top - 50;
+// const sec5 = $('#ngos').offset().top - 50;
 
-const sections = [sec1, sec2, sec3, sec4, sec5];
+// const sections = [sec1, sec2, sec3, sec4, sec5];
+const sections = [sec1, sec2, sec3, sec4];
 
 $(window).scroll(function () {
   const windscroll = $(window).scrollTop();
